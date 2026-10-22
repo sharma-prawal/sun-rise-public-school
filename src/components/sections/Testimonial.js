@@ -58,6 +58,23 @@ const Testimonial = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
+            <div className="tiles-item reveal-from-right" data-reveal-delay="600">
+              <div className="tiles-item-inner">
+                <div className="testimonial-item-content">
+                  <p className="text-sm mb-0">
+                    
+                    	"Education is the most powerful weapon which you can use to change the world."
+                    
+                  </p>
+                </div>
+                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                  <span className="testimonial-item-link">
+                    <a href="#0">Nelson Mandela</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">

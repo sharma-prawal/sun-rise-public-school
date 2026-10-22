@@ -61,6 +61,9 @@ const Hero = ({
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 With a spectacular roadside location, our school campus has many features that create a dynamic teaching and learning environment.
                 </p>
+                <div className="reveal-from-bottom" data-reveal-delay="600">
+                  <button className="button button-primary">Learn More</button>
+                </div>
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">

@@ -1,0 +1,45 @@
+/* Header.css */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.sticky-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sticky-header .logo img {
+  height: 50px;
+}
+
+.sticky-header .main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-header .main-nav ul li {
+  font-size: 16px;
+}
+
+.sticky-header .main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.sticky-header .main-nav ul li a:hover {
+  color: #007BFF;
+}

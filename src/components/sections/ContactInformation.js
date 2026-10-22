@@ -51,15 +51,22 @@ const ContactInformation = ({
               How to contact <span className="text-color-primary">us?</span>
             </h1>
             <div className="container-xs">
-            {/* <Cta  /> */}
-            <p className="m-0 mb-32 reveal-from-bottom" style={{color:'white'}} data-reveal-delay="400">
-                <ul>
-                  <li style={{textAlign: 'left'}}><span className='text-color-mid'>Name - </span>Sun Rise Model Public School</li>
-                  <li style={{textAlign: 'left'}}><span className='text-color-mid'>Address - </span>V.P.O. Kandi Dholran Tehsil Baroh Distt Kangra Himachal Pradesh 176054</li>
-                  <li style={{textAlign: 'left'}}><span className='text-color-mid'>Email ID - </span>sunrisemodelpublicschool@gmail.com</li>
-                  <li style={{textAlign: 'left'}}><span className='text-color-mid'>(M) - </span>98163-25450, 94186-54359</li>
-                </ul>
-            </p>
+              <form className="contact-form">
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" className="button button-primary">Submit</button>
+              </form>
+            </div>
             <h3 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               <span className="text-color-primary">Directions!</span>
             </h3>
@@ -71,7 +78,6 @@ const ContactInformation = ({
               allowfullscreen=""
               loading="lazy"
             ></iframe>
-            </div>
           </div>
         </div>
       </div>

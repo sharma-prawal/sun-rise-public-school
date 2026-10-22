@@ -6,12 +6,12 @@ import { SectionProps } from '../../utils/SectionProps';
 const propTypes = {
   ...SectionProps.types,
   split: PropTypes.bool
-}
+};
 
 const defaultProps = {
   ...SectionProps.defaults,
   split: false
-}
+};
 
 const Cta = ({
   className,
@@ -46,25 +46,26 @@ const Cta = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container reveal-from-bottom">
-        <div
-          className={innerClasses}
-        >
+      <div className="container">
+        <div className={innerClasses}>
+          <div className="cta-content">
+            <h3 className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="200">
+              Join <span className="text-color-primary">Sun Rise Public School</span> today and shape a brighter future for your child.
+            </h3>
+            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              Contact us to learn more about our programs and facilities.
+            </p>
+          </div>
           <div className="cta-action">
-            <p className="m-0 mb-32 reveal-from-bottom" style={{color:'white'}} data-reveal-delay="400">
-                <ul>
-                <li style={{textAlign: 'left'}}>Name - Sun Rise Model Public School</li>
-                <li style={{textAlign: 'left'}}>Address - Kandi, Dholran, Himachal Pradesh</li>
-                <li style={{textAlign: 'left'}}>Email ID - ______@___.__</li>
-                <li style={{textAlign: 'left'}}>(M) - 98163-25450, 94186-54359</li>
-                </ul>
-                </p>
+            <a href="/contact" className="button button-primary button-wide-mobile">
+              Get in Touch
+            </a>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 Cta.propTypes = propTypes;
 Cta.defaultProps = defaultProps;

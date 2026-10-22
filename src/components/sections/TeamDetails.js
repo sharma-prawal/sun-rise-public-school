@@ -51,33 +51,33 @@ const TeamDetails = ({
   };
 
   const renderTeam = (teamData) => {
-      let result = teamData.map(team => {
-        return (
-          <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require(`./../../assets/images/placeholder-${team.gender}.jpg`)}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    {team.name}
-                  </h4>
-                    <p className="m-0 text-sm">
-                      ({team.position}) <br/>
-                      {team.address}
-                    </p>
-                </div>
+    let result = teamData.map(team => {
+      return (
+        <div className="tiles-item reveal-from-bottom">
+          <div className="tiles-item-inner">
+            <div className="features-tiles-item-header">
+              <div className="features-tiles-item-image mb-16">
+                <Image
+                  src={require(`./../../assets/images/placeholder-${team.gender}.jpg`)}
+                  alt="Team member"
+                  width={64}
+                  height={64} />
               </div>
+            </div>
+            <div className="features-tiles-item-content">
+              <h4 className="mt-0 mb-8">
+                {team.name}
+              </h4>
+              <p className="m-0 text-sm">
+                ({team.position}) <br/>
+                {team.address}
+              </p>
+            </div>
           </div>
-        )
-      });
-      return result;
+        </div>
+      )
+    });
+    return result;
   }
 
   return (

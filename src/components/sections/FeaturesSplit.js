@@ -6,11 +6,11 @@ import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionSplitProps.types
-}
+};
 
 const defaultProps = {
   ...SectionSplitProps.defaults
-}
+};
 
 const FeaturesSplit = ({
   className,
@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Innovative Learning Solutions',
+    paragraph: 'Our school offers cutting-edge learning solutions to prepare students for the future. Explore our unique approach to education.'
   };
 
   return (
@@ -67,14 +67,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Personalized Learning
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Tailored Education Plans
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Each student receives a customized education plan to meet their unique needs and goals.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -84,7 +84,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item">
                 <Image
                   src={require('./../../assets/images/features-split-image-01.png')}
-                  alt="Features split 01"
+                  alt="Feature split 01"
                   width={528}
                   height={396} />
               </div>
@@ -93,14 +93,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Advanced Technology
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Smart Classrooms
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Our classrooms are equipped with the latest technology to enhance the learning experience.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -110,7 +110,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item">
                 <Image
                   src={require('./../../assets/images/features-split-image-02.png')}
-                  alt="Features split 02"
+                  alt="Feature split 02"
                   width={528}
                   height={396} />
               </div>
@@ -119,14 +119,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Holistic Development
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Beyond Academics
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  We focus on the overall development of students, including extracurricular activities and life skills.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -136,7 +136,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item">
                 <Image
                   src={require('./../../assets/images/features-split-image-03.png')}
-                  alt="Features split 03"
+                  alt="Feature split 03"
                   width={528}
                   height={396} />
               </div>
@@ -147,7 +147,7 @@ const FeaturesSplit = ({
       </div>
     </section>
   );
-}
+};
 
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;

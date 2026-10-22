@@ -1,59 +1,44 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import Logo from './partials/Logo';
-import FooterNav from './partials/FooterNav';
-import FooterSocial from './partials/FooterSocial';
+import './Footer.css';
 
-const propTypes = {
-  topOuterDivider: PropTypes.bool,
-  topDivider: PropTypes.bool
-}
-
-const defaultProps = {
-  topOuterDivider: false,
-  topDivider: false
-}
-
-const Footer = ({
-  className,
-  topOuterDivider,
-  topDivider,
-  ...props
-}) => {
-
-  const classes = classNames(
-    'site-footer center-content-mobile',
-    topOuterDivider && 'has-top-divider',
-    className
-  );
-
+const Footer = () => {
   return (
-    <footer
-      {...props}
-      className={classes}
-    >
+    <footer className="site-footer">
       <div className="container">
-        <div className={
-          classNames(
-            'site-footer-inner',
-            topDivider && 'has-top-divider'
-          )}>
-          <div className="footer-top space-between text-xxs">
-            <Logo />
-            <FooterSocial />
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Contact Us</h4>
+            <p>Sun Rise Public School</p>
+            <p>123 School Lane, City, State</p>
+            <p>Email: info@sunriseps.edu</p>
+            <p>Phone: +1 (555) 123-4567</p>
           </div>
-          <div  id='navBar' className="footer-bottom space-between text-xxs invert-order-desktop">
-            <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://www.linkedin.com/in/prawal-sharma-450511125/">Prawal Sharma</a>. All rights reserved</div>
+          <div className="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/links">Important Links</a></li>
+              <li><a href="/faq">FAQs</a></li>
+            </ul>
           </div>
+          <div className="footer-section">
+            <h4>Follow Us</h4>
+            <p>Stay connected with us on social media:</p>
+            <ul className="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Sun Rise Public School. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
-}
-
-Footer.propTypes = propTypes;
-Footer.defaultProps = defaultProps;
+};
 
 export default Footer;

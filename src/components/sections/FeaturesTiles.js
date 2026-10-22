@@ -6,11 +6,12 @@ import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionTilesProps.types
-}
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults
-}
+};
+
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -44,8 +45,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'A good school produces students that see and know themselves in their own context rather than merely as ‘good students.’ These contexts should include geographical, cultural, community-based, language-driven, and professional factors and ideas.'
+    title: 'Explore Our Features',
+    paragraph: 'Discover the unique features that make our school stand out. From advanced facilities to a nurturing environment, we have it all.'
   };
 
   return (
@@ -64,15 +65,18 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                      alt="Features tile icon 01"
+                      alt="Feature 1"
                       width={64}
                       height={64} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Admission
-                    </h4>
+                    Advanced Curriculum
+                  </h4>
+                  <p className="m-0 text-sm">
+                    Our curriculum is designed to foster critical thinking and creativity.
+                  </p>
                 </div>
               </div>
             </div>
@@ -83,15 +87,18 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 02"
+                      alt="Feature 2"
                       width={64}
                       height={64} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Fee Collection
-                    </h4>
+                    Modern Facilities
+                  </h4>
+                  <p className="m-0 text-sm">
+                    Equipped with state-of-the-art facilities to enhance learning.
+                  </p>
                 </div>
               </div>
             </div>
@@ -102,72 +109,18 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 03"
+                      alt="Feature 3"
                       width={64}
                       height={64} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Time Table
-                    </h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Student Report
-                    </h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Exam Results
-                    </h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
-                      alt="Features tile icon 06"
-                      width={64}
-                      height={64} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Staff Management
-                    </h4>
+                    Experienced Faculty
+                  </h4>
+                  <p className="m-0 text-sm">
+                    Learn from the best educators with years of experience.
+                  </p>
                 </div>
               </div>
             </div>
@@ -177,7 +130,7 @@ const FeaturesTiles = ({
       </div>
     </section>
   );
-}
+};
 
 FeaturesTiles.propTypes = propTypes;
 FeaturesTiles.defaultProps = defaultProps;

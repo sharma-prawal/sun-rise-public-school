@@ -14,6 +14,10 @@ import Team from './views/Team';
 import ImportantLink from './views/ImportantLink';
 import Faq from './views/Faq';
 
+// Components
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -29,24 +33,28 @@ const App = () => {
 
   useEffect(() => {
     const page = location.pathname;
-    document.body.classList.add('is-loaded')
+    document.body.classList.add('is-loaded');
     childRef.current.init();
     trackPage(page);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   return (
-    <ScrollReveal
-      ref={childRef}
-      children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          <AppRoute exact path="/contact" component={ContactUs} layout={LayoutDefault} />
-          <AppRoute exact path="/team" component={Team} layout={LayoutDefault} />
-          <AppRoute exact path="/links" component={ImportantLink} layout={LayoutDefault} />
-          <AppRoute exact path="/faq" component={Faq} layout={LayoutDefault} />
-        </Switch>
-      )} />
+    <>
+      <Header />
+      <ScrollReveal
+        ref={childRef}
+        children={() => (
+          <Switch>
+            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+            <AppRoute exact path="/contact" component={ContactUs} layout={LayoutDefault} />
+            <AppRoute exact path="/team" component={Team} layout={LayoutDefault} />
+            <AppRoute exact path="/links" component={ImportantLink} layout={LayoutDefault} />
+            <AppRoute exact path="/faq" component={Faq} layout={LayoutDefault} />
+          </Switch>
+        )} />
+      <Footer />
+    </>
   );
 }
 
